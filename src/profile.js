@@ -9,18 +9,18 @@ const animation = {
 };
 // Change your display name on tha landing display
 const header = {
-  name: "a Human",
+  name: "Rick Rieger",
 };
 const background = {
   // Options: Snow or Particle
-  type: "Snow",
+  type: "Particle",
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
 const section2title = "About Me";
 const about = {
   paragraph:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. ",
+    "Hello, I am an Army veteran with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -42,30 +42,27 @@ const skillsBar = [
     faClass: "fab fa-js",
   },
   {
-    name: "SASS",
-    // svg: '',
-    faClass: "fab fa-sass",
-  },
-  {
     name: "Node",
     // svg: '',
     faClass: "fab fa-node",
   },
   {
-    name: "Python",
+    name: "Github",
     // svg: '',
-    faClass: "fab fa-python",
+    faClass: "fab fa-github",
   },
   {
-    name: "Java",
+    name: "Git",
     // svg: '',
-    faClass: "fab fa-java",
+    faClass: "fab fa-git",
   },
   {
-    name: "PHP",
+    name: "React",
     // svg: '',
-    faClass: "fab fa-php",
+    faClass: "fab fa-react",
   },
+
+
   {
     name: "Database",
     // svg: '',
@@ -76,6 +73,7 @@ const skillsBar = [
     // svg: '',
     faClass: "fab fa-aws",
   },
+
 ];
 // Edit your projects, its name, your skills used to make it, and the url.
 // You can omit freely anything if you dont have it
