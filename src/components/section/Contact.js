@@ -4,7 +4,7 @@ import { contact, section5Title, social } from '../../profile'
 const Contact = () => {
     
     return (
-        <div className="parallax">
+        <div className="parallax" id="not-dark3">
                 <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
                     <>
                 <div className="git-head-div text-center mx-auto">

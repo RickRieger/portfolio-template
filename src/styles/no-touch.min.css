@@ -449,7 +449,7 @@ input:checked + .slider:before {
     blinkTextCursor 0.5s steps(27) infinite normal;
 }
 .parallax {
-  background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://rieger-bucket.s3.amazonaws.com/images/richmond.jpg);
 }
 @keyframes typewriter {
   from {

@@ -160,12 +160,12 @@ const contact = {
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
 const social = {
-  github: "https://github.com",
-  facebook: "https://facebook.com",
-  // twitter: "https://twitter.com",
-  instagram: "https://instagram.com",
-  linkedin: "https://linkedin.com",
-  resume: "https://novoresume.com/",
+  github: "https://github.com/RickRieger",
+  facebook: "https://www.facebook.com/rick.rieger.167",
+  twitter: "https://twitter.com/rickrieger36251",
+  instagram: "https://www.instagram.com/rickrieger/",
+  linkedin: "https://www.linkedin.com/in/rick-rieger/",
+  resume: "https://rieger-bucket.s3.amazonaws.com/RickRieger_Resume.docx",
 };
 // Dont change anything here
 export {
