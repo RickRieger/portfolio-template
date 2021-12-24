@@ -13,7 +13,7 @@ const header = {
 };
 const background = {
   // Options: Snow or Particle
-  type: "Particle",
+  type: "Snow",
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
@@ -28,7 +28,7 @@ const skillsBar = [
   {
     name: "HTML5",
     // To add a custom svg instead of font-awesome icons, add svg path below otherwise just comment it out
-    svg: "M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z",
+    // svg: "M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z",
     faClass: "fab fa-html5",
   },
   {
@@ -126,13 +126,13 @@ const projects = [
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = "Miscellaneous";
+const section4Title = "JavaScript Projects hosted on Github Pages";
 const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc1
     id: "misc1",
-    name: "Miscellaneous 1",
-    url: "https://github.com/kaustubhai",
+    name: "jQuery-Jeopardy",
+    url: "https://rickrieger.github.io/jquery-jeopardy/",
   },
   {
     // Add image in './styles/images.css' in #misc2
@@ -153,8 +153,8 @@ const miscellaneous = [
 const section5Title = "Get in Touch";
 const contact = {
   pitch:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae.",
-  copyright: "Kaustubh Mishra",
+    "Thank you so much for visiting my portfolio!  You may download a copy of my resume below and I hope to hear from you soon.",
+  copyright: "Rick Rieger",
   contactUrl: "",
 };
 // Paste your respective social media links. You can omit any if you dont have it
@@ -165,7 +165,7 @@ const social = {
   twitter: "https://twitter.com/rickrieger36251",
   instagram: "https://www.instagram.com/rickrieger/",
   linkedin: "https://www.linkedin.com/in/rick-rieger/",
-  resume: "https://rieger-bucket.s3.amazonaws.com/RickRieger_Resume.docx",
+  resume: "https://rieger-bucket.s3.amazonaws.com/RickRieger.pdf",
 };
 // Dont change anything here
 export {

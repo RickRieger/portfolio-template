@@ -229,6 +229,7 @@ button:focus {
   margin: 3rem 3rem 0 3rem;
   background-color: #fff;
   max-height: 80vh;
+  border-radius: 20px;
 }
 .git-head-div {
   box-sizing: border-box;
@@ -566,3 +567,9 @@ input:checked + .slider:before {
     margin-right: auto;
   }
 }
+/* .fab :hover {
+  color: rgb(0, 187, 255);
+}
+.fas :hover {
+  color: rgb(0, 187, 255);
+} */
