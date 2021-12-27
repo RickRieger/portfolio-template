@@ -128,7 +128,7 @@ button:focus {
   border-bottom: solid 2px var(--primary-color);
   margin-bottom: 15px;
   text-align: center;
-  margin:auto
+  margin: auto;
 }
 .skill__square {
   display: inline;
@@ -365,7 +365,7 @@ textarea:focus {
   z-index: 1002;
   cursor: crosshair;
 }
-.links{
+.links {
   color: #00635e;
   text-align: center;
   cursor: pointer;
@@ -603,7 +603,7 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
   }
-  .Header h1{
-    margin-bottom: 425px;
+  .Header h1 {
+    margin-bottom: 475px;
   }
 }
