@@ -76,7 +76,7 @@ button:focus {
 .effect2:before {
   z-index: -1;
   position: absolute;
-  content: "";
+  content: '';
   bottom: 15px;
   left: 10px;
   width: 50%;
@@ -112,6 +112,9 @@ button:focus {
 .about-text {
   width: 80%;
   padding: 2%;
+  text-indent: 40px;
+  text-align: left;
+  margin: auto;
 }
 .red-line {
   color: var(--primary-color);
@@ -123,6 +126,8 @@ button:focus {
   padding-bottom: 5px;
   border-bottom: solid 2px var(--primary-color);
   margin-bottom: 15px;
+  text-align: center;
+  margin:auto
 }
 .skill__square {
   display: inline;
@@ -343,11 +348,35 @@ textarea:focus {
 .project-name {
   text-decoration: none;
 }
+.gtp-about {
+  position: fixed;
+  left: 90%;
+  height: 150px;
+  top: 70%;
+  z-index: 1002;
+  cursor: crosshair;
+}
+.gtp-portfolio {
+  position: fixed;
+  left: 90%;
+  height: 150px;
+  top: 80%;
+  z-index: 1002;
+  cursor: crosshair;
+}
+.links{
+  color: #00635e;
+  text-align: center;
+  cursor: pointer;
+}
+.links:hover {
+  color: darkorange;
+}
 .gtp {
   position: fixed;
-  left: 92%;
+  left: 90%;
   height: 150px;
-  top: 82%;
+  top: 90%;
   z-index: 1002;
   cursor: crosshair;
 }
@@ -406,7 +435,7 @@ textarea:focus {
 }
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
@@ -443,10 +472,10 @@ input:checked + .slider:before {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  font-family: "Anonymous Pro", monospace !important;
+  font-family: 'Anonymous Pro', monospace !important;
 }
 .anim-typewriter {
-  animation: typewriter 4s steps(27) 1s 1 normal both,
+  animation: typewriter 2s steps(27) 1s 1 normal both,
     blinkTextCursor 0.5s steps(27) infinite normal;
 }
 .parallax {
@@ -457,7 +486,7 @@ input:checked + .slider:before {
     width: 0;
   }
   to {
-    width: 15em;
+    width: 18em;
   }
 }
 @keyframes blinkTextCursor {
@@ -544,8 +573,18 @@ input:checked + .slider:before {
     display: none;
   }
   .gtp {
-    left: 80%;
-    top: 87%;
+    left: 76%;
+    top: 90%;
+    height: 75px;
+  }
+  .gtp-about {
+    left: 3%;
+    top: 90%;
+    height: 75px;
+  }
+  .gtp-portfolio {
+    left: 40%;
+    top: 90%;
     height: 75px;
   }
   .Copy {
@@ -567,9 +606,3 @@ input:checked + .slider:before {
     margin-right: auto;
   }
 }
-/* .fab :hover {
-  color: rgb(0, 187, 255);
-}
-.fas :hover {
-  color: rgb(0, 187, 255);
-} */

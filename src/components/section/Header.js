@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderButton from '../layouts/HeaderButton';
 import { header } from '../../profile';
+import { colorMix } from 'tsparticles/Utils';
 
 const Header = () => {
   const scrollTo = () => {
@@ -10,11 +10,24 @@ const Header = () => {
       behavior: 'smooth',
     });
   };
+  const scrollToAbout = () => {
+    window.scrollTo({
+      top: 900,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+  const scrollToPortfolio = () => {
+    window.scrollTo({
+      top: 1700,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
 
   const toggleDarkMode = (e) => {
     document.documentElement.classList.toggle('dark-mode');
     document.getElementById('form').classList.toggle('dark-mode');
-    document.getElementById('not-dark').classList.toggle('inverse-dark');
     document.getElementById('not-dark2').classList.toggle('inverse-dark');
     document.getElementById('not-dark3').classList.toggle('inverse-dark');
     document.getElementById('not-dark4').classList.toggle('inverse-dark');
@@ -31,8 +44,10 @@ const Header = () => {
   return (
     <div>
       <div className='Header'>
-        <h1>{`I'm ${header.name}`}</h1>
-        <p className='line-1 anim-typewriter'>and this is my portfolio... </p>
+        <h1 style={{color:'#6c757d', marginBottom:'120px'}}><span style={{color:'darkorange'}}>Hello.</span>{` My name is ${header.name}`}</h1>
+        <p style={{color:'#6c757d'}} className='line-1 anim-typewriter'>
+          and I build things for the web...{' '}
+        </p>
         <label className='switch'>
           <input
             id='mode-switch'
@@ -41,16 +56,45 @@ const Header = () => {
           />
           <span className='slider round'></span>
         </label>
-        <HeaderButton />
       </div>
-      <img
-        id='not-dark'
+      <div
+        onClick={scrollToAbout}
+        alt='About Me'
+        title='About me'
+        className='gtp-about'
+      >
+        <h2
+          className='links'
+          href='#about'
+        >
+          About
+        </h2>{' '}
+      </div>
+      <div
+        onClick={scrollToPortfolio}
+        alt='Portfolio'
+        title='Portfolio'
+        className='gtp-portfolio'
+      >
+        <h2
+          className='links'
+          href='#about'
+        >
+          Portfolio
+        </h2>{' '}
+      </div>
+      <div
         onClick={scrollTo}
         alt='Contact Me'
-        title='Contact Me'
+        title='Contact me'
         className='gtp'
-        src='https://rieger-bucket.s3.amazonaws.com/images/me.png'
-      ></img>
+      >
+        <h2
+          className='links'
+        >
+          Contact
+        </h2>{' '}
+      </div>
     </div>
   );
 };

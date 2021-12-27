@@ -40,3 +40,6 @@
   background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+three');
   cursor: none;
 }
+#download-link{
+  color:red,
+}

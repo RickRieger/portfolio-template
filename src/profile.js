@@ -9,7 +9,7 @@ const animation = {
 };
 // Change your display name on tha landing display
 const header = {
-  name: "Rick Rieger",
+  name: "Rick",
 };
 const background = {
   // Options: Snow or Particle
@@ -20,7 +20,7 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-    "Hello, I am an Army veteran with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
+    "I am an Army veteran with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -153,7 +153,7 @@ const miscellaneous = [
 const section5Title = "Get in Touch";
 const contact = {
   pitch:
-    "Thank you so much for visiting my portfolio!  You may download a copy of my resume below and I hope to hear from you soon.",
+    "Thank you so much for visiting my portfolio! I hope to hear from you soon.",
   copyright: "Rick Rieger",
   contactUrl: "",
 };
