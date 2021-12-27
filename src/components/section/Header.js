@@ -1,6 +1,7 @@
 import React from 'react';
 import { header } from '../../profile';
 import { colorMix } from 'tsparticles/Utils';
+import '../../styles/no-touch.min.css'
 
 const Header = () => {
   const scrollTo = () => {
@@ -44,7 +45,7 @@ const Header = () => {
   return (
     <div>
       <div className='Header'>
-        <h1 style={{color:'#6c757d', marginBottom:'120px'}}><span style={{color:'darkorange'}}>Hello.</span>{` My name is ${header.name}`}</h1>
+        <h1 style={{color:'#6c757d'}}><span style={{color:'darkorange'}}>Hello.</span>{` My name is ${header.name}`}</h1>
         <p style={{color:'#6c757d'}} className='line-1 anim-typewriter'>
           and I build things for the web...{' '}
         </p>
