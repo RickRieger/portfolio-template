@@ -605,6 +605,9 @@ input:checked + .slider:before {
   }
   .Header h1 {
    position: absolute;
-   top:15%;
+   top:20%;
+  }
+  .Header p {
+    margin-top: 40px;
   }
 }
