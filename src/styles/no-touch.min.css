@@ -32,9 +32,10 @@ button:focus {
   text-align: center;
   font-size: 5.5rem;
   position: absolute;
+  margin-bottom: 300px;
 }
 .Header p {
-  margin-top: 125px;
+  margin-top: 80px;
 }
 .particle {
   position: absolute!;
@@ -413,9 +414,6 @@ textarea:focus {
   height: 34px;
   left: 44.5%;
   bottom: 46%;
-}
-.Header p {
-  margin-top: 40px;
 }
 .switch input {
   opacity: 0;
