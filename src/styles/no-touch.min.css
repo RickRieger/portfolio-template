@@ -604,6 +604,7 @@ input:checked + .slider:before {
     margin-right: auto;
   }
   .Header h1 {
-    margin-bottom: 475px;
+   position: absolute;
+   top:15%;
   }
 }
