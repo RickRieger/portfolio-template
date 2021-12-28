@@ -137,8 +137,8 @@ const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc2
     id: "misc2",
-    name: "Miscellaneous 2",
-    url: "https://github.com/kaustubhai",
+    name: "BS- Paint",
+    url: "https://rickrieger.github.io/bs-paint/",
   },
   {
     // Add image in './styles/images.css' in #misc3
