@@ -143,8 +143,26 @@ const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc3
     id: "misc3",
-    name: "Miscellaneous 3",
-    url: "https://github.com/kaustubhai",
+    name: "Satellite Finder",
+    url: "https://rickrieger.github.io/i-need-space/",
+  },
+  {
+    // Add image in './styles/images.css' in #misc1
+    id: "misc4",
+    name: "Recipe Finder",
+    url: "https://rickrieger.github.io/final_project-/",
+  },
+  {
+    // Add image in './styles/images.css' in #misc2
+    id: "misc5",
+    name: "soon to come",
+    url: "https://rickrieger.github.io/bs-paint/",
+  },
+  {
+    // Add image in './styles/images.css' in #misc3
+    id: "misc6",
+    name: "soon to come",
+    url: "https://rickrieger.github.io/i-need-space/",
   },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)

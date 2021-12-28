@@ -37,7 +37,19 @@
   cursor: none;
 }
 .misc3 {
-  background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+three');
+  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/sattelite-search.jpg');
+  cursor: none;
+}
+.misc4 {
+  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/app-etizing-vanilla.jpg');
+  cursor: none;
+}
+.misc5 {
+  background-image: url('');
+  cursor: none;
+}
+.misc6 {
+  background-image: url('');
   cursor: none;
 }
 #download-link{
