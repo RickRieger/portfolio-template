@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Project = ({ id, name, url, skills }) => {
+const Project = ({
+  id,
+  name,
+  url,
+  url_github_frontend,
+  url_github_backend,
+}) => {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null;
@@ -22,7 +28,28 @@ const Project = ({ id, name, url, skills }) => {
       >
         <h2>{name}</h2>
       </a>
-      {skills && <h3>{skills.map((skill) => skill)}</h3>}
+      {url_github_frontend && (
+        <a
+          title={url_github_frontend}
+          className='project-name'
+          rel='noopener noreferrer'
+          target='_blank'
+          href={url_github_frontend}
+        >
+          <h4>Click here for frontend code</h4>
+        </a>
+      )}
+      {url_github_backend && (
+        <a
+          title={url_github_backend}
+          className='project-name'
+          rel='noopener noreferrer'
+          target='_blank'
+          href={url_github_backend}
+        >
+          <h4>Click here for backend code</h4>
+        </a>
+      )}
     </div>
   );
 };

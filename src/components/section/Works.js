@@ -26,7 +26,8 @@ const Works = () => {
                 id={x.id}
                 url={x.url}
                 name={x.name}
-                skills={x.skills}
+                url_github_frontend ={x.url_github_frontend}
+                url_github_backend ={x.url_github_backend}
               />
             ))}
         </div>
