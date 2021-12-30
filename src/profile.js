@@ -20,7 +20,7 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-    "I am an Army veteran with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
+    "I am an Army veteran, husband, and father with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
