@@ -161,8 +161,8 @@ const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc3
     id: "misc6",
-    name: "soon to come",
-    url: "https://rickrieger.github.io/i-need-space/",
+    name: "Hacker-news-clone",
+    url: "https://rickrieger.github.io/hacker-snooze/",
   },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
