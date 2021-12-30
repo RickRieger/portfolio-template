@@ -45,13 +45,13 @@
   cursor: none;
 }
 .misc5 {
-  background-image: url('');
+  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/drum_machine.jpg');
   cursor: none;
 }
 .misc6 {
   background-image: url('');
   cursor: none;
 }
-#download-link{
-  color:red,
+#download-link {
+  color: red;
 }

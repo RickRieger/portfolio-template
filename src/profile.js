@@ -155,8 +155,8 @@ const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc2
     id: "misc5",
-    name: "soon to come",
-    url: "https://rickrieger.github.io/bs-paint/",
+    name: "Drum Machine",
+    url: "https://rickrieger.github.io/drum-machine/",
   },
   {
     // Add image in './styles/images.css' in #misc3
