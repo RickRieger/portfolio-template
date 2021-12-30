@@ -91,8 +91,10 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project2
     id: "project2",
-    name: "Project 2",
-    url: "#",
+    name: "app-etizing recipes",
+    url: "https://app-etizing.riegercodes.com/",
+    url_github_frontend: "https://github.com/RickRieger/fullstack-recipes-frontend",
+    url_github_backend: "https://github.com/RickRieger/fullstack-recipes-backend",
   },
   {
     // Add image in './styles/images.css' in #project3
