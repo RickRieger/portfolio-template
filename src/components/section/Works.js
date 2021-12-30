@@ -43,7 +43,12 @@ const Works = () => {
         <div className='row'>
           {miscellaneous &&
             miscellaneous.map((x) => (
-              <Project key={x.id} id={x.id} url={x.url} name={x.name} />
+              <Project
+                key={x.id}
+                id={x.id}
+                url={x.url}
+                name={x.name}
+              />
             ))}
         </div>
       </div>
