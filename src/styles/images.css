@@ -12,13 +12,13 @@
   cursor: none;
 }
 .project3 {
-  background-image: url('https://via.placeholder.com/400x600.png?text=Project+three');
+  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/movies_with_friends.jpg');
   cursor: none;
 }
-.project4 {
+/* .project4 {
   background-image: url('https://via.placeholder.com/400x600.png?text=Project+four');
   cursor: none;
-}
+} */
 
 /* Miscellaneous Activities photo */
 .misc1 {

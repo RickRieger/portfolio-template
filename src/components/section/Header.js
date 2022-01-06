@@ -1,6 +1,6 @@
 import React from 'react';
 import { header } from '../../profile';
-import { colorMix } from 'tsparticles/Utils';
+// import { colorMix } from 'tsparticles/Utils';
 import '../../styles/no-touch.min.css'
 
 const Header = () => {

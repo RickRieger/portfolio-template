@@ -99,8 +99,10 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project3
     id: "project3",
-    name: "Project 3",
-    url: "#",
+    name: "Movies With Friends",
+    url: "https://findmypracticedomain.com/",
+    url_github_frontend: "https://github.com/RickRieger/auth-frontend",
+    url_github_backend: "https://github.com/RickRieger/FullStackMovieAppBackEnd",
   },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
