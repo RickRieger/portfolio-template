@@ -13,7 +13,7 @@ const header = {
 };
 const background = {
   // Options: Snow or Particle
-  type: 'Snow',
+  type: 'Particle',
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
@@ -108,7 +108,7 @@ const projects = [
   },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
-// You can omit freely anything if you dont have it
+// You can omit freely anything if you don't have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
 const section4Title = 'JavaScript Projects hosted on Github Pages';
 const miscellaneous = [
@@ -167,7 +167,7 @@ const social = {
   twitter: 'https://twitter.com/rickrieger36251',
   instagram: 'https://www.instagram.com/rickrieger/',
   linkedin: 'https://www.linkedin.com/in/rick-rieger/',
-  resume: 'https://rieger-bucket.s3.amazonaws.com/RickRieger.pdf',
+  resume: 'https://rieger-bucket.s3.amazonaws.com/Rick_Rieger_Resume.pdf',
 };
 // Dont change anything here
 export {

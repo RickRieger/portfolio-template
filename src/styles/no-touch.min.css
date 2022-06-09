@@ -48,7 +48,6 @@ button:focus {
 }
 .skills {
   padding: 3%;
-
 }
 .progress-block {
   padding: 10px 0;
@@ -115,7 +114,7 @@ button:focus {
   width: 80%;
   padding: 2%;
   text-indent: 40px;
-  text-align: left;
+  text-align: center;
   margin: auto;
 }
 .red-line {
@@ -605,8 +604,8 @@ input:checked + .slider:before {
     margin-right: auto;
   }
   .Header h1 {
-   position: absolute;
-   top:20%;
+    position: absolute;
+    top: 20%;
   }
   .Header p {
     margin-top: 40px;

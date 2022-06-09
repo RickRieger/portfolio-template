@@ -2,27 +2,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 :root {
-    --primary-color:  #00635e;
-    --hover-color:  #00fff2;
+  --primary-color: #00635e;
+  --hover-color: #00fff2;
 }
 
-
 #download-link {
-    color: green;
-    animation-name: color;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    
+  color: green;
+  animation-name: color;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    color: #00635e;
   }
-  
-  @keyframes color {
-    0% {
-      color:#00635e;
-    }
-    50% {
-      color:#00fff2;
-    }
-    100% {
-      color: #00635e;
-    }
+  50% {
+    color: #00fff2;
   }
+  100% {
+    color: #00635e;
+  }
+}
+
+/* nav-bar-style */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: sticky;
+  z-index: 99;
+  background-color: white;
+}
+ul {
+  width: 100vw;
+  padding: 0;
+  padding-top: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+li {
+  color: #00635e;
+  text-align: center;
+  cursor: pointer;
+}
+li:hover {
+  color: orange;
+}
+
+.about {
+  margin: auto;
+}
