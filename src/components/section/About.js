@@ -13,7 +13,13 @@ const About = () => {
               {section2title}
             </h1>
           </div>
-          <p className='lead about-text'>{about.paragraph}</p>
+          <p className='lead about-text'>
+            {about.paragraph} Want to see more? Check out my space on
+            devCodeCamp's tech hire website! ==>{' '}
+            <a href='https://techhire.io/rick-rieger/'>
+              techhire.io/rick-rieger/
+            </a>
+          </p>
         </div>
       </div>
       <div id='Skills'>
