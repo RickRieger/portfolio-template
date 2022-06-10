@@ -47,6 +47,11 @@ const skillsBar = [
     faClass: 'fab fa-node',
   },
   {
+    name: 'Python',
+    // svg: '',
+    faClass: 'fab fa-python',
+  },
+  {
     name: 'Github',
     // svg: '',
     faClass: 'fab fa-github',
