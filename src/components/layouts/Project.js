@@ -36,7 +36,7 @@ const Project = ({
           target='_blank'
           href={url_github_frontend}
         >
-          <h4>Click here for frontend code</h4>
+          <h4>See frontend code</h4>
         </a>
       )}
       {url_github_backend && (
@@ -47,7 +47,7 @@ const Project = ({
           target='_blank'
           href={url_github_backend}
         >
-          <h4>Click here for backend code</h4>
+          <h4>See backend code</h4>
         </a>
       )}
     </div>
