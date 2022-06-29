@@ -172,7 +172,7 @@ const social = {
   twitter: 'https://twitter.com/rickrieger36251',
   instagram: 'https://www.instagram.com/rickrieger/',
   linkedin: 'https://www.linkedin.com/in/rick-rieger/',
-  resume: 'https://rieger-bucket.s3.amazonaws.com/Rick_Rieger_Resume.pdf',
+  resume: 'https://rieger-bucket.s3.amazonaws.com/Rick_Rieger.pdf',
 };
 // Dont change anything here
 export {
