@@ -87,7 +87,7 @@ const projects = [
     // Add image in './styles/images.css' in #project1
     id: 'project1',
     name: 'Ticket-Tracker',
-    url: 'https://ticket-tracker.riegercodes.com/',
+    url: 'https://ticket-tracker-app.netlify.app/',
     url_github_frontend:
       'https://github.com/RickRieger/bug-tracker-frontend-redux',
     url_github_backend: 'https://github.com/RickRieger/bug-tracker-backend',
@@ -96,7 +96,7 @@ const projects = [
     // Add image in './styles/images.css' in #project2
     id: 'project2',
     name: 'app-etizing recipes',
-    url: 'https://app-etizing.findmypracticedomain.com/',
+    url: 'https://appetizing.netlify.app/',
     url_github_frontend:
       'https://github.com/RickRieger/fullstack-recipes-frontend',
     url_github_backend:
@@ -106,7 +106,7 @@ const projects = [
     // Add image in './styles/images.css' in #project3
     id: 'project3',
     name: 'Movies With Friends',
-    url: 'https://findmypracticedomain.com/',
+    url: 'https://movies-and-friends.netlify.app/',
     url_github_frontend: 'https://github.com/RickRieger/auth-frontend',
     url_github_backend:
       'https://github.com/RickRieger/FullStackMovieAppBackEnd',
