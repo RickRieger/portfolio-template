@@ -49,6 +49,10 @@
   background-image: url('../assets/mits.jpg');
   cursor: none;
 }
+.misc8 {
+  background-image: url('../assets/uhost.jpg');
+  cursor: none;
+}
 #download-link {
   color: red;
 }
