@@ -49,6 +49,7 @@ const Works = () => {
                 id={x.id}
                 url={x.url}
                 name={x.name}
+                url_github_frontend={x.url_github_frontend}
               />
             ))}
         </div>
