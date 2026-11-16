@@ -1,8 +1,12 @@
 import React from 'react';
 import Project from '../layouts/Project';
+import ExercisesCard from '../layouts/ExercisesCard';
 import {
   projects,
   miscellaneous,
+  exercises,
+  exercisesTitle,
+  exercisesSubtitle,
   section3Title,
   section4Title,
 } from '../../profile';
@@ -52,6 +56,11 @@ const Works = () => {
                 url_github_frontend={x.url_github_frontend}
               />
             ))}
+          <ExercisesCard
+            title={exercisesTitle}
+            subtitle={exercisesSubtitle}
+            exercises={exercises}
+          />
         </div>
       </div>
     </>

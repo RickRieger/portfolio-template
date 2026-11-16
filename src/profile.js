@@ -171,6 +171,17 @@ const miscellaneous = [
       'https://github.com/RickRieger/CSS_course_project_Acadamind',
   },
 ];
+// Small bootcamp exercises, shown together on one text-only card (no image).
+// To add one, copy a line below: name, live site url (optional), code url (optional).
+const exercisesTitle = 'Bootcamp Exercises';
+const exercisesSubtitle = 'Code Immersives, NYC (2021)';
+const exercises = [
+  {
+    name: 'Links, Pictures & Broken Code',
+    url: 'https://rickrieger.github.io/links-pictures-and-broken-code/',
+    code: 'https://github.com/RickRieger/links-pictures-and-broken-code',
+  },
+];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
@@ -200,6 +211,9 @@ export {
   skillsBar,
   projects,
   miscellaneous,
+  exercises,
+  exercisesTitle,
+  exercisesSubtitle,
   contact,
   social,
   section2title,

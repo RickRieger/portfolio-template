@@ -10,6 +10,7 @@ My personal portfolio: about me, skills, full-stack projects, front-end projects
 - **Based on:** [kaustubhai/portfolio-template](https://github.com/kaustubhai/portfolio-template) (original template README below)
 
 #### Change log
+- **2026-11-16:** Added a text-only "Bootcamp Exercises" card that lists small Code Immersives exercises with live and code links. Its data is the `exercises` array in `src/profile.js`, and the card is `src/components/layouts/ExercisesCard.js`. First entry: Links, Pictures & Broken Code.
 - **2026-11-16:** Added uHost (Academind CSS course project, 2020) to the GitHub Pages projects, with live and code links.
 - **2026-11-16:** Added the MITS Company Website (Reynolds Community College team project, 2020) to the GitHub Pages projects, with a "See frontend code" link. Set up GitHub Pages deployment through GitHub Actions. Fixed favicon links that used root paths (`/favicon-32x32.png`), which break when the site is served from a subfolder.
 
