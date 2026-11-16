@@ -1,3 +1,19 @@
+# Rick Rieger — Developer Portfolio
+
+### 🔗 Live site: **[rickrieger.github.io/portfolio-template](https://rickrieger.github.io/portfolio-template/)**
+
+My personal portfolio: about me, skills, full-stack projects, front-end projects hosted on GitHub Pages, and a contact form.
+
+- **Built with:** React 17 (Create React App), Bootstrap 5, AOS scroll animations, tsParticles background, Formspree contact form
+- **Edit content in:** `src/profile.js` (text, projects, links) and `src/styles/images.css` (project images)
+- **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) builds the site and publishes it to GitHub Pages on every push to `master`. `homepage` in `package.json` points to the `/portfolio-template/` subfolder so asset paths resolve.
+- **Based on:** [kaustubhai/portfolio-template](https://github.com/kaustubhai/portfolio-template) (original template README below)
+
+#### Change log
+- **2026-11-16:** Added the MITS Company Website (Reynolds Community College team project, 2020) to the GitHub Pages projects, with a "See frontend code" link. Set up GitHub Pages deployment through GitHub Actions. Fixed favicon links that used root paths (`/favicon-32x32.png`), which break when the site is served from a subfolder.
+
+---
+
 # Web Developer React Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/kaustubhai/portfolio-template?color=blue)](https://github.com/kaustubhai/portfolio-template/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/kaustubhai/portfolio-template)](https://github.com/kaustubhai/portfolio-template/stargazers)
 
 ## A clean, beautiful and responsive react portfolio template for Developers!
