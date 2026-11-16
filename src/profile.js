@@ -153,6 +153,14 @@ const miscellaneous = [
     name: 'Hacker-news-clone',
     url: 'https://rickrieger.github.io/hacker-snooze/',
   },
+  {
+    // Add image in './styles/images.css' in #misc7
+    // Reynolds Community College team project (2020): company website for MITS
+    id: 'misc7',
+    name: 'MITS Company Website',
+    url: 'https://rickrieger.github.io/Mits/',
+    url_github_frontend: 'https://github.com/RickRieger/Mits',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
