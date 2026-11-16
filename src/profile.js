@@ -161,6 +161,15 @@ const miscellaneous = [
     url: 'https://rickrieger.github.io/Mits/',
     url_github_frontend: 'https://github.com/RickRieger/Mits',
   },
+  {
+    // Add image in './styles/images.css' in #misc8
+    // Academind CSS course project (2020): multi-page hosting company site
+    id: 'misc8',
+    name: 'uHost (CSS Course Project)',
+    url: 'https://rickrieger.github.io/CSS_course_project_Acadamind/',
+    url_github_frontend:
+      'https://github.com/RickRieger/CSS_course_project_Acadamind',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
