@@ -67,7 +67,11 @@ li:hover {
   border: 1px solid #eee;
   padding: 0.5rem 0.75rem;
 }
+/* The navbar stylesheet sets every <ul> to a full-screen-wide horizontal
+   flex row (display: flex; width: 100vw); undo that for this list. */
 .exercise-list {
+  display: block;
+  width: auto;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -80,6 +84,13 @@ li:hover {
   padding: 0.45rem 0;
   border-bottom: 1px solid #f0f0f0;
   font-size: 0.95rem;
+  text-align: left;
+  cursor: default;
+}
+/* Global li rules color list items teal and turn them orange on hover (meant for the navbar). */
+.exercise-item,
+.exercise-item:hover {
+  color: #333;
 }
 .exercise-item:last-child {
   border-bottom: none;
