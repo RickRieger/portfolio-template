@@ -204,6 +204,10 @@ const exercises = [
     name: 'Functions With Parameters',
     code: 'https://github.com/RickRieger/functions-with-parameters',
   },
+  {
+    name: 'The Function Returns',
+    code: 'https://github.com/RickRieger/the-function-returns',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
