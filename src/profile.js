@@ -191,6 +191,11 @@ const exercises = [
     url: 'https://rickrieger.github.io/links-pictures-and-broken-code/',
     code: 'https://github.com/RickRieger/links-pictures-and-broken-code',
   },
+  {
+    // Test-based exercise (Jest), no web page: code link only
+    name: 'Make Variables Not War',
+    code: 'https://github.com/RickRieger/make-variables-not-war',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
