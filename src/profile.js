@@ -224,6 +224,10 @@ const exercises = [
     name: 'If Learning',
     code: 'https://github.com/RickRieger/if-learning',
   },
+  {
+    name: 'Fizzy (FizzBuzz)',
+    code: 'https://github.com/RickRieger/fizzy',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
