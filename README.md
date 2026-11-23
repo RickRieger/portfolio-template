@@ -8,8 +8,16 @@ My personal portfolio: about me, skills, full-stack projects, front-end projects
 - **Edit content in:** `src/profile.js` (text, projects, links) and `src/styles/images.css` (project images)
 - **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) builds the site and publishes it to GitHub Pages on every push to `master`. `homepage` in `package.json` points to the `/portfolio-template/` subfolder so asset paths resolve.
 - **Based on:** [kaustubhai/portfolio-template](https://github.com/kaustubhai/portfolio-template) (original template README below)
+- **Newer site:** my redesigned personal site lives at [rickrieger.github.io](https://rickrieger.github.io/) ([repo](https://github.com/RickRieger/rickrieger.github.io)). This "classic" portfolio stays live with its original look and gets the same content and bug fixes.
 
 #### Change log
+- **2026-11-23: Shared fixes with the new site** (look unchanged):
+  - **Dark mode is now opt-in.** Scripts in `public/index.html` switched dark mode on automatically for visitors whose OS was set to dark, inverting the whole page. They also ran before React rendered, so they could error on a missing element. They're removed. Dark mode now turns on only with the toggle, and `Header.js` restores a saved choice after the page renders.
+  - **Dead links:** removed the techhire.io profile link, which returns 404. `sitemap.xml` and `robots.txt` pointed to the original template author's site and now point here. The web manifest is renamed from "Create React App Sample".
+  - **New wording:** the About text describes my current role as a Business Analyst at Dominion Leasing Software (SOWs, SQL, Crystal Reports, ASP.NET/VB), my background, and my interest in cloud computing. The header tagline is now "Business Analyst & Developer". Added SQL, Crystal Reports and ASP.NET/VB to skills.
+  - **Accurate section titles:** "Full Stack Projects hosted on AWS" → "Full Stack Projects (MERN Stack)" (the front ends are on Netlify), and "JavaScript Projects…" → "Front-End Projects hosted on GitHub Pages".
+  - **Mouse pointer:** removed `cursor: none` from project images, which made the pointer disappear over them.
+  - **Contact form:** emails are labeled `[Portfolio (classic)]` with a `source` field, and the email field uses `type="email"` (it was `type="mail"`, which isn't a real input type).
 - **2026-11-16:** Added a text-only "Bootcamp Exercises" card that lists small Code Immersives exercises with live and code links. Its data is the `exercises` array in `src/profile.js`, and the card is `src/components/layouts/ExercisesCard.js`. First entry: Links, Pictures & Broken Code.
 - **2026-11-16:** Added uHost (Academind CSS course project, 2020) to the GitHub Pages projects, with live and code links.
 - **2026-11-16:** Added the MITS Company Website (Reynolds Community College team project, 2020) to the GitHub Pages projects, with a "See frontend code" link. Set up GitHub Pages deployment through GitHub Actions. Fixed favicon links that used root paths (`/favicon-32x32.png`), which break when the site is served from a subfolder.

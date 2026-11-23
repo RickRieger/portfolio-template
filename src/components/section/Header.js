@@ -1,24 +1,46 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { header } from '../../profile';
-import { colorMix } from 'tsparticles/Utils';
 import '../../styles/no-touch.min.css';
 
+// Dark mode is opt-in: it only turns on when the visitor flips the switch,
+// and that choice is remembered. (It used to switch on automatically from the
+// visitor's OS setting, from scripts in public/index.html.)
+const applyDarkMode = (on) => {
+  const toggle = (el, cls) => el && el.classList.toggle(cls, on);
+  toggle(document.documentElement, 'dark-mode');
+  toggle(document.getElementById('form'), 'dark-mode');
+  toggle(document.getElementById('not-dark3'), 'inverse-dark');
+  toggle(document.getElementById('not-dark4'), 'inverse-dark');
+  Array.from(document.getElementsByClassName('img-pro')).forEach((el) => toggle(el, 'inverse-dark'));
+};
+
+const readSavedMode = () => {
+  try {
+    return localStorage.getItem('mode');
+  } catch {
+    return null;
+  }
+};
+
 const Header = () => {
-  const toggleDarkMode = (e) => {
-    document.documentElement.classList.toggle('dark-mode');
-    document.getElementById('form').classList.toggle('dark-mode');
-    document.getElementById('not-dark3').classList.toggle('inverse-dark');
-    document.getElementById('not-dark4').classList.toggle('inverse-dark');
-    // document.getElementById('not-dark2').classList.toggle('inverse-dark');
+  const switchRef = useRef(null);
 
-    var x = document.getElementsByClassName('img-pro');
-    for (let i = 0; i < x.length; i += 1) {
-      x.item(i).classList.toggle('inverse-dark');
+  // Restore a dark-mode choice the visitor made on an earlier visit
+  useEffect(() => {
+    if (readSavedMode() === 'Dark') {
+      applyDarkMode(true);
+      if (switchRef.current) switchRef.current.checked = true;
     }
+  }, []);
 
-    if (document.documentElement.classList.contains('dark-mode'))
-      localStorage.setItem('mode', 'Dark');
-    else localStorage.setItem('mode', 'Light');
+  const toggleDarkMode = (e) => {
+    const on = e.target.checked;
+    applyDarkMode(on);
+    try {
+      localStorage.setItem('mode', on ? 'Dark' : 'Light');
+    } catch {
+      /* storage unavailable (private mode); the choice just won't be remembered */
+    }
   };
 
   return (
@@ -29,13 +51,15 @@ const Header = () => {
           {` My name is ${header.name}`}
         </h1>
         <p style={{ color: '#6c757d' }} className='line-1 anim-typewriter'>
-          and I build things for the web...{' '}
+          {header.tagline}
         </p>
-        <label className='switch'>
+        <label className='switch' title='Dark mode'>
           <input
             id='mode-switch'
-            onClick={(e) => toggleDarkMode(e)}
+            ref={switchRef}
+            onChange={toggleDarkMode}
             type='checkbox'
+            aria-label='Dark mode'
           />
           <span className='slider round'></span>
         </label>

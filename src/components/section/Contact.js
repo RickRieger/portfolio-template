@@ -29,6 +29,9 @@ const Contact = () => {
                 }
                 method={'POST'}
               >
+                {/* Label emails so they can be told apart from the new site's */}
+                <input type='hidden' name='_subject' value='[Portfolio (classic)] New contact message' />
+                <input type='hidden' name='source' value='Classic portfolio (rickrieger.github.io/portfolio-template)' />
                 <input
                   type='text'
                   id='fname'
@@ -37,7 +40,7 @@ const Contact = () => {
                   required
                 ></input>
                 <input
-                  type='mail'
+                  type='email'
                   id='mailid'
                   name='Email'
                   placeholder='Email Address'
