@@ -208,6 +208,10 @@ const exercises = [
     name: 'The Function Returns',
     code: 'https://github.com/RickRieger/the-function-returns',
   },
+  {
+    name: 'Return Of The String',
+    code: 'https://github.com/RickRieger/return-of-the-string',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
