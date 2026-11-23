@@ -10,6 +10,8 @@ const animation = {
 // Change your display name on tha landing display
 const header = {
   name: 'Rick',
+  // Typed out under the greeting (keep it under ~34 characters to fit the animation)
+  tagline: 'Business Analyst & Developer',
 };
 const background = {
   // Options: Snow or Particle
@@ -20,7 +22,7 @@ const background = {
 const section2title = 'About Me';
 const about = {
   paragraph:
-    "I am an Army veteran, husband, and father with a deep passion for coding and a relentless drive to find solutions. Building strong relationships is important to me, as I value the ability to work with people at all levels of an organization, including stakeholders, customers, vendors, and team members.  Let's connect :) ",
+    "I'm a Business Analyst at Dominion Leasing Software, where I work between our clients and our code: I gather requirements and write Statements of Work, then help deliver them by writing SQL, building Crystal Reports, and fixing bugs in our ASP.NET (Visual Basic) application. I'm an Army veteran, husband, and father who came into tech through Reynolds Community College and full-stack bootcamps at Code Immersives (NYC) and devCodeCamp. Building strong relationships with stakeholders, customers, vendors, and teammates matters to me, and lately I've been focused on cloud computing. Let's connect :)",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -68,9 +70,17 @@ const skillsBar = [
   },
 
   {
-    name: 'Database',
+    name: 'SQL',
     // svg: '',
     faClass: 'fas fa-database',
+  },
+  {
+    name: 'Crystal Reports',
+    faClass: 'fas fa-chart-bar',
+  },
+  {
+    name: 'ASP.NET / VB',
+    faClass: 'fab fa-microsoft',
   },
   {
     name: 'AWS',
@@ -81,7 +91,7 @@ const skillsBar = [
 // Edit your projects, its name, your skills used to make it, and the url.
 // You can omit freely anything if you dont have it
 // To Add a Project, copy any one below and paste it after the last comma and increment the id's project number
-const section3Title = 'Full Stack Projects hosted on AWS (MERN Stack)';
+const section3Title = 'Full Stack Projects (MERN Stack)';
 const projects = [
   {
     // Add image in './styles/images.css' in #project1
@@ -115,7 +125,7 @@ const projects = [
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you don't have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = 'JavaScript Projects hosted on Github Pages';
+const section4Title = 'Front-End Projects hosted on GitHub Pages';
 const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc1
