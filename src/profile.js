@@ -200,6 +200,10 @@ const exercises = [
     name: 'Functions Ahoy',
     code: 'https://github.com/RickRieger/functions-ahoy',
   },
+  {
+    name: 'Functions With Parameters',
+    code: 'https://github.com/RickRieger/functions-with-parameters',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
