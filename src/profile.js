@@ -180,6 +180,14 @@ const miscellaneous = [
     url_github_frontend:
       'https://github.com/RickRieger/CSS_course_project_Acadamind',
   },
+  {
+    // Add image in './styles/images.css' in #misc9
+    // Code Immersives layout exercise (2021), rebranded as the fictional DemoEats
+    id: 'misc9',
+    name: 'DemoEats (HTML/CSS layout)',
+    url: 'https://rickrieger.github.io/gitHubCopyCat/',
+    url_github_frontend: 'https://github.com/RickRieger/gitHubCopyCat',
+  },
 ];
 // Small bootcamp exercises, shown together on one text-only card (no image).
 // To add one, copy a line below: name, live site url (optional), code url (optional).
