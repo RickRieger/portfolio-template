@@ -196,6 +196,10 @@ const exercises = [
     name: 'Make Variables Not War',
     code: 'https://github.com/RickRieger/make-variables-not-war',
   },
+  {
+    name: 'Functions Ahoy',
+    code: 'https://github.com/RickRieger/functions-ahoy',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
