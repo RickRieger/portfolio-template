@@ -232,6 +232,10 @@ const exercises = [
     name: 'Node-Along (command-line scripts)',
     code: 'https://github.com/RickRieger/node-along',
   },
+  {
+    name: 'Node Immersives (terminal app)',
+    code: 'https://github.com/RickRieger/node-immersives',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
