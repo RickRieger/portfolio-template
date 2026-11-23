@@ -212,6 +212,10 @@ const exercises = [
     name: 'Return Of The String',
     code: 'https://github.com/RickRieger/return-of-the-string',
   },
+  {
+    name: 'Stop Calling Yourself',
+    code: 'https://github.com/RickRieger/stop-calling-yourself-stop-calling-yourself',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
