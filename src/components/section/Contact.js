@@ -1,142 +1,107 @@
-import React from 'react';
-import { contact, section5Title, social } from '../../profile';
-import '../../styles/style.css'
+import React, { useState } from 'react';
+import { contact, social } from '../../profile';
+
+const socialLinks = [
+  { key: 'github', icon: 'fab fa-github', label: 'GitHub' },
+  { key: 'linkedin', icon: 'fab fa-linkedin', label: 'LinkedIn' },
+  { key: 'twitter', icon: 'fab fa-twitter', label: 'Twitter' },
+  { key: 'facebook', icon: 'fab fa-facebook', label: 'Facebook' },
+  { key: 'instagram', icon: 'fab fa-instagram', label: 'Instagram' },
+];
 
 const Contact = () => {
+  // idle | sending | sent | error
+  const [status, setStatus] = useState('idle');
+  const [error, setError] = useState('');
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    // Label every email so it's clear it came from the portfolio
+    data.set('_subject', `${contact.emailSubjectPrefix} ${data.get('subject') || 'New message'}`);
+    data.set('source', 'Portfolio website (rickrieger.github.io/portfolio-template)');
+
+    setStatus('sending');
+    try {
+      const res = await fetch(contact.formspreeUrl, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      if (res.ok) {
+        setStatus('sent');
+        form.reset();
+      } else {
+        const body = await res.json().catch(() => ({}));
+        setError(
+          body.errors ? body.errors.map((x) => x.message).join(' ') : 'Sorry, your message could not be sent.'
+        );
+        setStatus('error');
+      }
+    } catch {
+      setError('Sorry, your message could not be sent. Please check your connection and try again.');
+      setStatus('error');
+    }
+  };
+
   return (
-    <div className='parallax' id='not-dark4'>
-      <div
-        data-aos='zoom-in-up'
-        data-aos-once='true'
-        className='git-form'
-        id='form'
-      >
-        <>
-          <div className='git-head-div text-center mx-auto'>
-            <h1 id='Contact' className='git-head'>
-              {section5Title}
-            </h1>
+    <section id='contact' className='section section--tint'>
+      <div className='container contact'>
+        <div className='contact__info' data-aos='fade-up'>
+          <h2 className='section__title'>{contact.title}</h2>
+          <p>{contact.pitch}</p>
+          <div className='contact__social'>
+            {socialLinks
+              .filter((s) => social[s.key])
+              .map((s) => (
+                <a key={s.key} href={social[s.key]} target='_blank' rel='noopener noreferrer' aria-label={s.label} title={s.label}>
+                  <i className={s.icon}></i>
+                </a>
+              ))}
           </div>
-        </>
-        <div className='container'>
-          <div className='git-cont row'>
-            <div className='col-12 col-sm-6 half'>
-              <form
-                action={
-                  contact.contactUrl
-                    ? contact.contactUrl
-                    : 'https://formspree.io/f/mlezdedd'
-                }
-                method={'POST'}
-              >
-                <input
-                  type='text'
-                  id='fname'
-                  name='firstname'
-                  placeholder='Your name'
-                  required
-                ></input>
-                <input
-                  type='mail'
-                  id='mailid'
-                  name='Email'
-                  placeholder='Email Address'
-                  required
-                ></input>
-                <input
-                  type='text'
-                  id='sub'
-                  name='Subject'
-                  placeholder='Subject'
-                  required
-                ></input>
-                <textarea
-                  id='msg'
-                  name='message'
-                  placeholder='Message'
-                  required
-                ></textarea>
-                <button style={{ cursor: 'pointer' }} type='submit'>
-                  Send Message
-                </button>
-              </form>
-            </div>
-            <div className='col-12 col-sm-6 half'>
-              <p className='lead'>{contact.pitch}</p>
-              <div className='d-flex justify-content-center align-items-center flex-column'>
-                <div className='inline-block'>
-                  {social.linkedin && (
-                    <a
-                      title='Visit Linkedin profile'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      href={social.linkedin}
-                    >
-                      <i className='fab fa-linkedin'></i>
-                    </a>
-                  )}
-                  {social.facebook && (
-                    <a
-                      title='Visit Facebok profile'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      href={social.facebook}
-                    >
-                      <i className='fab fa-facebook'></i>
-                    </a>
-                  )}
-                  {social.twitter && (
-                    <a
-                      title='Visit Twitter profile'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      href={social.twitter}
-                    >
-                      <i className='fab fa-twitter'></i>
-                    </a>
-                  )}
-                  {social.instagram && (
-                    <a
-                      title='Visit Instagram profile'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      href={social.instagram}
-                    >
-                      <i className='fab fa-instagram'></i>
-                    </a>
-                  )}
-                  {social.github && (
-                    <a
-                      title='Visit Github profile'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                      href={social.github}
-                    >
-                      <i className='fab fa-github'></i>
-                    </a>
-                  )}
-                  <br />
-                </div>
-                <div style={{ marginTop: '70px' }}>Click below for Resume</div>
-                {social.resume && (
-                  <a title='Download Resume' href={social.resume} download>
-                    <i
-                    
-                      className='fas fa-download'
-                      id="download-link"
-                    ></i>
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
+          {social.resume && (
+            <a href={social.resume} target='_blank' rel='noopener noreferrer' className='btn btn--ghost'>
+              <i className='fas fa-file-alt'></i> View resume
+            </a>
+          )}
         </div>
+
+        <form className='contact__form' onSubmit={onSubmit} data-aos='fade-up'>
+          <div className='field-row'>
+            <label>
+              Name
+              <input type='text' name='name' required autoComplete='name' />
+            </label>
+            <label>
+              Email
+              <input type='email' name='email' required autoComplete='email' />
+            </label>
+          </div>
+          <label>
+            Subject
+            <input type='text' name='subject' required />
+          </label>
+          <label>
+            Message
+            <textarea name='message' rows='5' required></textarea>
+          </label>
+          <button type='submit' className='btn btn--primary' disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Send message'}
+          </button>
+          {status === 'sent' && (
+            <p className='form-status form-status--ok' role='status'>
+              Thanks! Your message has been sent.
+            </p>
+          )}
+          {status === 'error' && (
+            <p className='form-status form-status--error' role='alert'>
+              {error}
+            </p>
+          )}
+        </form>
       </div>
-      <p id='not-dark3' className='Copy'>
-        {new Date().getFullYear()} © Copyright{' '}
-        <strong>{contact.copyright}</strong>. All Rights Reserved
-      </p>
-    </div>
+    </section>
   );
 };
 

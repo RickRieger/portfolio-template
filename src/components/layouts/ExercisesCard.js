@@ -1,13 +1,15 @@
 import React from 'react';
 
-// A text-only card listing small exercises: name + "live" and "code" links.
+// Text-only card listing small exercises: name + "Live" and "Code" links.
 // Data comes from `exercises` in src/profile.js.
 const ExercisesCard = ({ title, subtitle, exercises }) => {
   if (!exercises || exercises.length === 0) return null;
 
   return (
-    <div data-aos='fade-up' className='col-12 col-lg-4 project-card'>
-      <div className='exercise-list-box'>
+    <article className='project project--list' data-aos='fade-up'>
+      <div className='project__body'>
+        <h4 className='project__name'>{title}</h4>
+        {subtitle && <p className='project__desc'>{subtitle}</p>}
         <ul className='exercise-list'>
           {exercises.map((x) => (
             <li key={x.name} className='exercise-item'>
@@ -15,13 +17,12 @@ const ExercisesCard = ({ title, subtitle, exercises }) => {
               <span className='exercise-links'>
                 {x.url && (
                   <a href={x.url} target='_blank' rel='noopener noreferrer' title={x.url}>
-                    live
+                    Live
                   </a>
                 )}
-                {x.url && x.code && ' · '}
                 {x.code && (
                   <a href={x.code} target='_blank' rel='noopener noreferrer' title={x.code}>
-                    code
+                    Code
                   </a>
                 )}
               </span>
@@ -29,9 +30,7 @@ const ExercisesCard = ({ title, subtitle, exercises }) => {
           ))}
         </ul>
       </div>
-      <h2 className='exercise-card-title'>{title}</h2>
-      {subtitle && <h4 className='exercise-card-subtitle'>{subtitle}</h4>}
-    </div>
+    </article>
   );
 };
 

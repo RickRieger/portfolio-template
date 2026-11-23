@@ -1,58 +1,17 @@
-/* Add your profile image here */
-.Photo {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/me-no-background+2.png');
-}
-/* Projects Photo */
-.project1 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/ticket-tracker-landingpage.jpg');
-  cursor: none;
-}
-.project2 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/app-etizing-landing-img.jpg');
-  cursor: none;
-}
-.project3 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/movies_with_friends.jpg');
-  cursor: none;
-}
-/* .project4 {
-  background-image: url('https://via.placeholder.com/400x600.png?text=Project+four');
-  cursor: none;
-} */
+/* Project card pictures. Each class matches a project's `id` in src/profile.js.
+   Add a new picture: put the image in src/assets/ (or use a URL) and add a class. */
 
-/* Miscellaneous Activities photo */
-.misc1 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/Jeopardy.png');
-  cursor: none;
-}
-.misc2 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/bs-paint.jpg');
-  cursor: none;
-}
-.misc3 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/sattelite-search.jpg');
-  cursor: none;
-}
-.misc4 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/recipe_vanilla_js.png');
-  cursor: none;
-}
-.misc5 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/drum_machine.jpg');
-  cursor: none;
-}
-.misc6 {
-  background-image: url('https://rieger-bucket.s3.amazonaws.com/images/hacker_news_clone.jpg');
-  cursor: none;
-}
-.misc7 {
-  background-image: url('../assets/mits.jpg');
-  cursor: none;
-}
-.misc8 {
-  background-image: url('../assets/uhost.jpg');
-  cursor: none;
-}
-#download-link {
-  color: red;
-}
+/* Full-stack apps */
+.project1 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/ticket-tracker-landingpage.jpg'); }
+.project2 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/app-etizing-landing-img.jpg'); }
+.project3 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/movies_with_friends.jpg'); }
+
+/* Front-end projects */
+.misc1 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/Jeopardy.png'); }
+.misc2 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/bs-paint.jpg'); }
+.misc3 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/sattelite-search.jpg'); }
+.misc4 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/recipe_vanilla_js.png'); }
+.misc5 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/drum_machine.jpg'); }
+.misc6 { background-image: url('https://rieger-bucket.s3.amazonaws.com/images/hacker_news_clone.jpg'); }
+.misc7 { background-image: url('../assets/mits.jpg'); }
+.misc8 { background-image: url('../assets/uhost.jpg'); }

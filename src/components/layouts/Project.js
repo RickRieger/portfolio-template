@@ -1,57 +1,45 @@
 import React from 'react';
 
-const Project = ({
-  id,
-  name,
-  url,
-  url_github_frontend,
-  url_github_backend,
-}) => {
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if (newWindow) newWindow.opener = null;
-  };
-  return (
-    <div data-aos='fade-up' className=' col-12 col-lg-4 project-card'>
-      <div className='image-project'>
-        <div
-          className={`img-pro ${id}`}
-          onClick={() => openInNewTab(url)}
-        ></div>
+// Picture card for a project. The picture comes from a CSS class named after
+// the project's id (see src/styles/images.css).
+const Project = ({ id, name, description, tags, url, url_github_frontend, url_github_backend }) => (
+  <article className='project' data-aos='fade-up'>
+    <a href={url} target='_blank' rel='noopener noreferrer' className='project__media' aria-label={`Open ${name}`}>
+      <div className={`project__img ${id}`}></div>
+    </a>
+    <div className='project__body'>
+      <h4 className='project__name'>
+        <a href={url} target='_blank' rel='noopener noreferrer'>
+          {name}
+        </a>
+      </h4>
+      {description && <p className='project__desc'>{description}</p>}
+      {tags && tags.length > 0 && (
+        <ul className='chips chips--small'>
+          {tags.map((t) => (
+            <li key={t} className='chip'>
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className='project__links'>
+        <a href={url} target='_blank' rel='noopener noreferrer'>
+          <i className='fas fa-external-link-alt'></i> Live
+        </a>
+        {url_github_frontend && (
+          <a href={url_github_frontend} target='_blank' rel='noopener noreferrer'>
+            <i className='fab fa-github'></i> {url_github_backend ? 'Frontend' : 'Code'}
+          </a>
+        )}
+        {url_github_backend && (
+          <a href={url_github_backend} target='_blank' rel='noopener noreferrer'>
+            <i className='fab fa-github'></i> Backend
+          </a>
+        )}
       </div>
-      <a
-        title={url}
-        className='project-name'
-        rel='noopener noreferrer'
-        target='_blank'
-        href={url}
-      >
-        <h2>{name}</h2>
-      </a>
-      {url_github_frontend && (
-        <a
-          title={url_github_frontend}
-          className='project-name'
-          rel='noopener noreferrer'
-          target='_blank'
-          href={url_github_frontend}
-        >
-          <h4>See frontend code</h4>
-        </a>
-      )}
-      {url_github_backend && (
-        <a
-          title={url_github_backend}
-          className='project-name'
-          rel='noopener noreferrer'
-          target='_blank'
-          href={url_github_backend}
-        >
-          <h4>See backend code</h4>
-        </a>
-      )}
     </div>
-  );
-};
+  </article>
+);
 
 export default Project;

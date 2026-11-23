@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import Particles from './components/layouts/Particles';
-import Navbar from './components/section/Navbar';
-import Header from './components/section/Header';
-import About from './components/section/About';
-import Works from './components/section/Works';
-import Contact from './components/section/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Navbar from './components/section/Navbar';
+import Hero from './components/section/Hero';
+import About from './components/section/About';
+import Experience from './components/section/Experience';
+import Cloud from './components/section/Cloud';
+import Projects from './components/section/Projects';
+import Contact from './components/section/Contact';
+import Footer from './components/section/Footer';
 import { animation } from './profile';
 
 function App() {
@@ -15,19 +17,23 @@ function App() {
       duration: animation.duration,
       once: animation.once,
       disable: !animation.animate,
+      offset: 60,
     });
-    // eslint-disable-next-line
   }, []);
 
   return (
-    <div className='App'>
+    <>
       <Navbar />
-      <Header />
-      <Particles />
-      <About />
-      <Works />
-      <Contact />
-    </div>
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Cloud />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
 

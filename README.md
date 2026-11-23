@@ -1,15 +1,24 @@
-# Rick Rieger — Developer Portfolio
+# Rick Rieger — Business Analyst & Developer Portfolio
 
 ### 🔗 Live site: **[rickrieger.github.io/portfolio-template](https://rickrieger.github.io/portfolio-template/)**
 
-My personal portfolio: about me, skills, full-stack projects, front-end projects hosted on GitHub Pages, and a contact form.
+My personal site: who I am, what I do as a Business Analyst (SOWs, SQL, Crystal Reports, ASP.NET/VB maintenance), my interest in cloud computing, my coding projects, and a contact form.
 
-- **Built with:** React 17 (Create React App), Bootstrap 5, AOS scroll animations, tsParticles background, Formspree contact form
-- **Edit content in:** `src/profile.js` (text, projects, links) and `src/styles/images.css` (project images)
+- **Built with:** React 17 (Create React App), hand-written CSS (`src/styles/main.css`, no CSS framework), Inter font, Font Awesome icons, AOS scroll animations, Formspree contact form
+- **Edit content in:** `src/profile.js` holds all text, projects and links. `src/styles/images.css` holds the project card pictures.
+- **Page sections** (in `src/components/section/`): Navbar → Hero → About → What I Do (role + skills) → Cloud Computing → Projects (full-stack, front-end, bootcamp exercises) → Contact → Footer
 - **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) builds the site and publishes it to GitHub Pages on every push to `master`. `homepage` in `package.json` points to the `/portfolio-template/` subfolder so asset paths resolve.
-- **Based on:** [kaustubhai/portfolio-template](https://github.com/kaustubhai/portfolio-template) (original template README below)
+- **Run locally:** `npm ci`, then `npm run build`. On Node 17+, set `NODE_OPTIONS=--openssl-legacy-provider` first, because react-scripts 4 uses webpack 4.
+- **Originally based on:** [kaustubhai/portfolio-template](https://github.com/kaustubhai/portfolio-template) (original template README below). The November 2026 redesign replaced its layout and styles.
 
 #### Change log
+- **2026-11-23: Redesign.**
+  - New clean, light look: sticky nav with section links, a hero with headshot, card layouts, and a mobile menu.
+  - Content rewritten for my current role as a Business Analyst at Dominion Leasing Software. New "What I Do", grouped "Skills" and "Cloud Computing" sections.
+  - Project cards now show a description, tech tags and Live/Code links.
+  - Contact form now sends in the background, shows a confirmation, and labels emails `[Portfolio]`.
+  - Removed: the particle background, the dark-mode toggle (its startup script inverted the page for visitors whose OS was set to dark mode), the Bootstrap 5 stylesheet, the dead techhire.io link, and `cursor: none` on project images, which hid the mouse pointer.
+  - Nav links now jump to section anchors instead of fixed pixel positions.
 - **2026-11-16:** Added a text-only "Bootcamp Exercises" card that lists small Code Immersives exercises with live and code links. Its data is the `exercises` array in `src/profile.js`, and the card is `src/components/layouts/ExercisesCard.js`. First entry: Links, Pictures & Broken Code.
 - **2026-11-16:** Added uHost (Academind CSS course project, 2020) to the GitHub Pages projects, with live and code links.
 - **2026-11-16:** Added the MITS Company Website (Reynolds Community College team project, 2020) to the GitHub Pages projects, with a "See frontend code" link. Set up GitHub Pages deployment through GitHub Actions. Fixed favicon links that used root paths (`/favicon-32x32.png`), which break when the site is served from a subfolder.

@@ -1,41 +1,17 @@
 import React from 'react';
-import Skills from '../layouts/Skills';
-import { about, skillsBar, section2title } from '../../profile';
+import { about } from '../../profile';
 
-const About = () => {
-  return (
-    <div id='about' className='effect2'>
-      <div data-aos='zoom-in-up' data-aos-once='true' className='row'>
-        {/* <div className="col-12 d-none d-md-block offset-md-1 col-md-4 Photo" id="not-dark2"></div> */}
-        <div className='col-12  col-md- about'>
-          <div className='About-title-box'>
-            <h1 id='About' className='red-line'>
-              {section2title}
-            </h1>
-          </div>
-          <p className='lead about-text'>
-            {about.paragraph} Want to see more? Check out my space on
-            devCodeCamp's tech hire website! ==>{' '}
-            <a href='https://techhire.io/rick-rieger/'>
-              techhire.io/rick-rieger/
-            </a>
-          </p>
-        </div>
-      </div>
-      <div id='Skills'>
-        <div className='row d-flex justify-content-center skills'>
-          {skillsBar.map((x) => (
-            <Skills
-              key={x.name}
-              faClass={x.faClass}
-              svg={x.svg}
-              label={x.name}
-            />
-          ))}
-        </div>
-      </div>
+const About = () => (
+  <section id='about' className='section'>
+    <div className='container container--narrow' data-aos='fade-up'>
+      <h2 className='section__title'>{about.title}</h2>
+      {about.paragraphs.map((p, i) => (
+        <p key={i} className='about__text'>
+          {p}
+        </p>
+      ))}
     </div>
-  );
-};
+  </section>
+);
 
 export default About;
