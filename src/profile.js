@@ -265,6 +265,10 @@ const exercises = [
     url: 'https://rickrieger.github.io/FlexBoxAnimateMenu-/',
     code: 'https://github.com/RickRieger/FlexBoxAnimateMenu-',
   },
+  {
+    name: 'You Deserve Arrays',
+    code: 'https://github.com/RickRieger/you-deserve-arrays',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
