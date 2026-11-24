@@ -273,6 +273,10 @@ const exercises = [
     name: 'Hip Hip Array (array methods)',
     code: 'https://github.com/RickRieger/hip-hip-array',
   },
+  {
+    name: 'For Of 4 Lyfe (for...of loops)',
+    code: 'https://github.com/RickRieger/for-of-4-lyfe',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
