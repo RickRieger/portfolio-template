@@ -286,6 +286,10 @@ const exercises = [
     name: 'While-E-Coyote (command-line while loops)',
     code: 'https://github.com/RickRieger/while-e-coyote',
   },
+  {
+    name: 'While The Long Face? (loop until a goal is met)',
+    code: 'https://github.com/RickRieger/while-the-long-face',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
