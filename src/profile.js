@@ -252,6 +252,10 @@ const exercises = [
     name: 'Log Up: Front End (command-line login app)',
     code: 'https://github.com/RickRieger/log-up-front-end',
   },
+  {
+    name: 'Color Cleaver: Back End (color-wheel logic)',
+    code: 'https://github.com/RickRieger/color-cleaver-backend',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
