@@ -248,6 +248,10 @@ const exercises = [
     name: 'Log Up: Back End (login logic)',
     code: 'https://github.com/RickRieger/log-up-back-end',
   },
+  {
+    name: 'Log Up: Front End (command-line login app)',
+    code: 'https://github.com/RickRieger/log-up-front-end',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
