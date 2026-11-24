@@ -244,6 +244,10 @@ const exercises = [
     name: 'Node Immersives (terminal app)',
     code: 'https://github.com/RickRieger/node-immersives',
   },
+  {
+    name: 'Log Up: Back End (login logic)',
+    code: 'https://github.com/RickRieger/log-up-back-end',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
