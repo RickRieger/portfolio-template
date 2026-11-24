@@ -269,6 +269,10 @@ const exercises = [
     name: 'You Deserve Arrays',
     code: 'https://github.com/RickRieger/you-deserve-arrays',
   },
+  {
+    name: 'Hip Hip Array (array methods)',
+    code: 'https://github.com/RickRieger/hip-hip-array',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
