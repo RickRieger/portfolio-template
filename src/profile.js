@@ -290,6 +290,10 @@ const exercises = [
     name: 'While The Long Face? (loop until a goal is met)',
     code: 'https://github.com/RickRieger/while-the-long-face',
   },
+  {
+    name: 'String Theory (string building)',
+    code: 'https://github.com/RickRieger/string-theory',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
