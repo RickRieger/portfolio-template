@@ -260,6 +260,11 @@ const exercises = [
     name: 'Color Cleaver: Front End (command-line color mixer)',
     code: 'https://github.com/RickRieger/color-cleaver-front-end',
   },
+  {
+    name: 'Responsive Animated Nav Menu',
+    url: 'https://rickrieger.github.io/FlexBoxAnimateMenu-/',
+    code: 'https://github.com/RickRieger/FlexBoxAnimateMenu-',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
