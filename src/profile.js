@@ -281,6 +281,11 @@ const exercises = [
     name: 'While You Were Coding (while loops)',
     code: 'https://github.com/RickRieger/while-you-were-coding',
   },
+  {
+    // The 2021 fork only had starter files; solved during the 2026 cleanup
+    name: 'While-E-Coyote (command-line while loops)',
+    code: 'https://github.com/RickRieger/while-e-coyote',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
