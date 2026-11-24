@@ -277,6 +277,10 @@ const exercises = [
     name: 'For Of 4 Lyfe (for...of loops)',
     code: 'https://github.com/RickRieger/for-of-4-lyfe',
   },
+  {
+    name: 'While You Were Coding (while loops)',
+    code: 'https://github.com/RickRieger/while-you-were-coding',
+  },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
